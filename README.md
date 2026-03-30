@@ -22,7 +22,7 @@ A maioria dos aplicativos de finanças disponíveis apresenta:
 
 - Necessidade de um controle de gastos eficiente
 - Desejo de compreender melhor a movimentação do próprio dinheiro
-- Criar uma ferramenta que realmente faça sentido no dia a dia
+- Criar uma ferramenta que realmente faça sentido no dia a dia ajsja
 
 ---
 
