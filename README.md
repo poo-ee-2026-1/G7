@@ -1,12 +1,12 @@
 # G7
 
-# 💰 FinanceApp — Controle de Gastos Pessoal
+# FinanceApp — Controle de Gastos Pessoal
 
 > Aplicativo de finanças pessoal focado em simplicidade, usabilidade e visualização inteligente dos seus gastos.
 
 ---
 
-## 📌 Introdução
+## Introdução
 
 O **FinanceApp** nasceu da necessidade real de um controle financeiro pessoal eficiente. Diante da ausência de aplicativos no mercado que atendessem às nossas necessidades — especialmente no quesito de interface intuitiva e experiência de uso —, decidimos criar nossa própria solução.
 
@@ -22,11 +22,11 @@ A maioria dos aplicativos de finanças disponíveis apresenta:
 
 - Necessidade de um controle de gastos eficiente
 - Desejo de compreender melhor a movimentação do próprio dinheiro
-- Criar uma ferramenta que realmente faça sentido no dia a dia ajsja
+- Criar uma ferramenta que realmente faça sentido no dia a dia
 
 ---
 
-## 🎯 Objetivos
+## Objetivos
 
 ### Geral
 
@@ -34,15 +34,15 @@ Criar um aplicativo de finanças de fácil uso para melhorar o planejamento fina
 
 ### Específicos
 
-- 📥 Monitorar **entradas e saídas** financeiras
-- 📊 Comparar **gasto diário vs. maior gasto**
-- 📈 Gerar **gráficos analíticos** para visualização:
+- Monitorar **entradas e saídas** financeiras
+- Comparar **gasto diário vs. maior gasto**
+- Gerar **gráficos analíticos** para visualização:
   - Categoria × Total gasto
   - Dias × Total de gastos
 
 ---
 
-## 👥 Equipe
+## Equipe
 
 | Membro | Função | Responsabilidade |
 |--------|--------|-----------------|
@@ -52,7 +52,7 @@ Criar um aplicativo de finanças de fácil uso para melhorar o planejamento fina
 
 ---
 
-## 🗂️ Divisão de Tarefas
+## Divisão de Tarefas
 
 | Tarefa | Responsável | Prazo estimado |
 |--------|-------------|----------------|
@@ -62,23 +62,18 @@ Criar um aplicativo de finanças de fácil uso para melhorar o planejamento fina
 
 ---
 
-## 📓 Diário de Desenvolvimento
+## Diário de Desenvolvimento
 
 | Data | Evento |
 |------|--------|
 | 09/03 | Brainstorm e início do planejamento |
-| 16/03 | Criação da pasta do repositório e desenvolvimento da estrutura da inteface |
+| 16/03 | Criação da pasta do repositório e desenvolvimento da estrutura da interface |
 | 23/03 | Criação do README |
+| 30/03 | Finalização da estrutura da interface e início do código |
 
 ---
 
-## 🚀 Status do Projeto
+## Referências didática
 
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
-![Versão](https://img.shields.io/badge/versão-0.1.0-blue)
-
----
-
-## 📄 Licença
-
-Este projeto está sob desenvolvimento pela equipe. Informações sobre licença serão adicionadas em breve.
+- Vídeos no Youtube sobre programação
+- Aulas teóricas semanais de programação fornecidas pela Universidade Federal de Goiás
