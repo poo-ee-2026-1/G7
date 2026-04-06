@@ -70,6 +70,7 @@ Criar um aplicativo de finanças de fácil uso para melhorar o planejamento fina
 | 16/03 | Criação da pasta do repositório e desenvolvimento da estrutura da interface |
 | 23/03 | Criação do README |
 | 30/03 | Finalização da estrutura da interface e início do código |
+| 06/04 | Criação do Diagrama de Classe + Enumerações e Relacionamentos-Chaves entre eles |
 
 ---
 
