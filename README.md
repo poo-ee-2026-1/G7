@@ -35,10 +35,8 @@ Criar um aplicativo de finanças de fácil uso para melhorar o planejamento fina
 ### Específicos
 
 - Monitorar **entradas e saídas** financeiras
-- Comparar **gasto diário vs. maior gasto**
-- Gerar **gráficos analíticos** para visualização:
-  - Categoria × Total gasto
-  - Dias × Total de gastos
+- Mostrar saldo no final da análise
+- Apresentar isso em um relatório de texto e/ou csv
 
 ---
 
@@ -46,9 +44,9 @@ Criar um aplicativo de finanças de fácil uso para melhorar o planejamento fina
 
 | Membro | Função | Responsabilidade |
 |--------|--------|-----------------|
-| **Guilherme** | Frontend | Montagem da interface e criação de um design intuitivo |
-| **Thiago** | Backend | Integração frontend/backend e criação do código |
-| **Arthur** | QA / Testes | Testes do aplicativo, busca de bugs e melhorias |
+| **Guilherme** | Backend | criação do código |
+| **Thiago** | Backend | criação do código |
+| **Arthur** | Backend | criação do código |
 
 ---
 
@@ -56,9 +54,9 @@ Criar um aplicativo de finanças de fácil uso para melhorar o planejamento fina
 
 | Tarefa | Responsável | Prazo estimado |
 |--------|-------------|----------------|
-| Montagem da interface (Frontend) | Guilherme | 1 semana |
-| Criação do código + integração Frontend/Backend | Thiago | 3 meses |
-| Testes e melhorias | Arthur | 3 dias |
+| Criação do código | Guilherme | 3 meses |
+| Criação do código | Thiago | 3 meses |
+| Criação do código | Arthur | 3 meses |
 
 ---
 
@@ -69,8 +67,8 @@ Criar um aplicativo de finanças de fácil uso para melhorar o planejamento fina
 | 09/03 | Brainstorm e início do planejamento |
 | 16/03 | Criação da pasta do repositório e desenvolvimento da estrutura da interface |
 | 23/03 | Criação do README |
-| 30/03 | Finalização da estrutura da interface e início do código |
-| 06/04 | Criação do Diagrama de Classe + Enumerações e Relacionamentos-Chaves entre eles |
+| 30/03 | Finalização da estrutura da interface |
+| 06/04 | Criação do Diagrama de Classe |
 
 ---
 
