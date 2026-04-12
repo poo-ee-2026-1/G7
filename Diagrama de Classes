@@ -1,0 +1,77 @@
+classDiagram
+    %% Pacote model (Regras de Negócio e Dados)
+    namespace model_package {
+        class Usuario {
+            <<class>>
+            %% Atributos inferidos com base nos métodos
+            - nome: String
+            - email: String
+            + getNome(): String
+            + getEmail(): String
+            + setNome(nome: String): void
+            + setEmail(email: String): void
+        }
+
+        class Categoria {
+            <<enumeration>>
+            SALARIO  
+            ALIMENTACAO
+            TRANSPORTE
+            SAUDE
+            LAZER
+            EDUCACAO
+            MORADIA
+            OUTROS  
+        }
+
+        class GerenciadorFinanceiro {
+            <<class>>
+            - usuario: Usuario
+            - listaTransacoes: List<Transacao>
+            + adicionarTransacao(t: Transacao): void
+            + calcularSaldo(): void
+            + filtrarTransacoes(filtro: String): void
+        }
+
+        class Transacao {
+            <<abstract>>
+            - data: Date
+            - valor: double
+            - descricao: String
+            + exibirDetalhes(): void
+            %% Nota: No diagrama original, '+' na Transacao está fora da caixa,
+            %% mas por padrão UML métodos de classe abstrata também são abstratos e
+            %% devem ser definidos nas subclasses, como mostrado.
+        }
+
+        class TransacaoFixa {
+            <<class>>
+            + exibirDetalhes(): void
+        }
+
+        class TransacaoVariavel {
+            <<class>>
+            + exibirDetalhes(): void
+        }
+    }
+
+    %% Pacote relatorio (Saída de Dados)
+    namespace relatorio_package {
+        class RelatorioTexto {
+            <<class>>
+            + gerarRelatorio(g: GerenciadorFinanceiro): void
+        }
+
+        class RelatorioCsv {
+            <<class>>
+            + exportarParaCsv(g: GerenciadorFinanceiro, arquivo: String): void
+        }
+    }
+
+    %% Pacote de Entrada (Entry Point)
+    namespace entrypoint_package {
+        class Main {
+            <<class>>
+            + main(String[] args): void
+        }
+    }
