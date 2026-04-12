@@ -65,7 +65,7 @@ Criar um aplicativo de finanças de fácil uso para melhorar o planejamento fina
 | Data | Evento |
 |------|--------|
 | 09/03 | Brainstorm e início do planejamento |
-| 16/03 | Criação da pasta do repositório e desenvolvimento da estrutura da interface |
+| 16/03 | Criação da pasta do repositório |
 | 23/03 | Criação do README |
 | 30/03 | Finalização da estrutura da interface |
 | 06/04 | Criação do Diagrama de Classe |
