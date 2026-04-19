@@ -1,3 +1,7 @@
+<img width="1005" height="1840" alt="diagrama_classes" src="https://github.com/user-attachments/assets/cb9b4ebb-fcaa-4596-b848-b50ef79d7cc9" />
+
+
+
 Classes: Main, Usuario, Transacao, TransacaoFixa, TransacaoVariavel, GerenciadorFinanceiro, RelatorioTexto, RelatorioCsv, Categoria, NaturezaFixa
 
 Encapsulamento: Usuario (nome, email), Transacao (id, descricao, valor, categoria, data), GerenciadorFinanceiro (usuario, transacoes), TransacaoFixa (natureza), TransacaoVariavel (parcelado, numeroParcelas)
@@ -23,4 +27,3 @@ Construtores: Transacao (valida valor), TransacaoVariavel (dois construtores), G
 Destrutores: Não se aplicam em Java — memória gerenciada pelo Garbage Collector. Recursos externos liberados via try-with-resources em RelatorioCsv
 
 Classes abstratas: Transacao
-
