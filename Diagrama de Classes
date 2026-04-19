@@ -1,77 +1,26 @@
-classDiagram
-    %% Pacote model (Regras de Negócio e Dados)
-    namespace model_package {
-        class Usuario {
-            <<class>>
-            %% Atributos inferidos com base nos métodos
-            - nome: String
-            - email: String
-            + getNome(): String
-            + getEmail(): String
-            + setNome(nome: String): void
-            + setEmail(email: String): void
-        }
+Classes: Main, Usuario, Transacao, TransacaoFixa, TransacaoVariavel, GerenciadorFinanceiro, RelatorioTexto, RelatorioCsv, Categoria, NaturezaFixa
 
-        class Categoria {
-            <<enumeration>>
-            SALARIO  
-            ALIMENTACAO
-            TRANSPORTE
-            SAUDE
-            LAZER
-            EDUCACAO
-            MORADIA
-            OUTROS  
-        }
+Encapsulamento: Usuario (nome, email), Transacao (id, descricao, valor, categoria, data), GerenciadorFinanceiro (usuario, transacoes), TransacaoFixa (natureza), TransacaoVariavel (parcelado, numeroParcelas)
 
-        class GerenciadorFinanceiro {
-            <<class>>
-            - usuario: Usuario
-            - listaTransacoes: List<Transacao>
-            + adicionarTransacao(t: Transacao): void
-            + calcularSaldo(): void
-            + filtrarTransacoes(filtro: String): void
-        }
+Abstração: Transacao (métodos abstratos getValorLiquido() e getTipo())
 
-        class Transacao {
-            <<abstract>>
-            - data: Date
-            - valor: double
-            - descricao: String
-            + exibirDetalhes(): void
-            %% Nota: No diagrama original, '+' na Transacao está fora da caixa,
-            %% mas por padrão UML métodos de classe abstrata também são abstratos e
-            %% devem ser definidos nas subclasses, como mostrado.
-        }
+Herança: TransacaoFixa herda de Transacao, TransacaoVariavel herda de Transacao
 
-        class TransacaoFixa {
-            <<class>>
-            + exibirDetalhes(): void
-        }
+Polimorfismo (sobrescrita): getValorLiquido() em TransacaoFixa e TransacaoVariavel, getTipo() em TransacaoFixa e TransacaoVariavel
 
-        class TransacaoVariavel {
-            <<class>>
-            + exibirDetalhes(): void
-        }
-    }
+Polimorfismo (sobrecarga): Construtores de TransacaoVariavel (construtor completo com parcelamento e construtor simplificado à vista)
 
-    %% Pacote relatorio (Saída de Dados)
-    namespace relatorio_package {
-        class RelatorioTexto {
-            <<class>>
-            + gerarRelatorio(g: GerenciadorFinanceiro): void
-        }
+Associação: RelatorioTexto → GerenciadorFinanceiro, RelatorioCsv → GerenciadorFinanceiro, Transacao → Categoria, Main → GerenciadorFinanceiro, Main → RelatorioTexto, Main → RelatorioCsv
 
-        class RelatorioCsv {
-            <<class>>
-            + exportarParaCsv(g: GerenciadorFinanceiro, arquivo: String): void
-        }
-    }
+Agregação: GerenciadorFinanceiro agrega Transacao (lista de transações)
 
-    %% Pacote de Entrada (Entry Point)
-    namespace entrypoint_package {
-        class Main {
-            <<class>>
-            + main(String[] args): void
-        }
-    }
+Composição: GerenciadorFinanceiro compõe Usuario, TransacaoFixa compõe NaturezaFixa
+
+Modificadores de acesso: private (todos os atributos), public (todos os métodos), static (contadorId em Transacao, sc em Main)
+
+Construtores: Transacao (valida valor), TransacaoVariavel (dois construtores), GerenciadorFinanceiro (recebe Usuario), RelatorioTexto (recebe GerenciadorFinanceiro), RelatorioCsv (recebe GerenciadorFinanceiro)
+
+Destrutores: Não se aplicam em Java — memória gerenciada pelo Garbage Collector. Recursos externos liberados via try-with-resources em RelatorioCsv
+
+Classes abstratas: Transacao
+
