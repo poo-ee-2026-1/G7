@@ -69,6 +69,7 @@ Criar um aplicativo de finanças de fácil uso para melhorar o planejamento fina
 | 23/03 | Criação do README |
 | 30/03 | Finalização da estrutura da interface |
 | 06/04 | Criação do Diagrama de Classe |
+| 20/04 | Adição do Diagrama de Classes no repositório + Pilares de POO a serem utilizados no projeto |
 
 ---
 
