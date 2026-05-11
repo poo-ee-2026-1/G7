@@ -71,6 +71,7 @@ Criar um aplicativo de finanças de fácil uso para melhorar o planejamento fina
 | 06/04 | Criação do Diagrama de Classe |
 | 20/04 | Adição do Diagrama de Classes no repositório + Pilares de POO a serem utilizados no projeto |
 | 27/04 | Apresentação dos códigos das classes Usuario e Categoria |
+| 11/05 | Demonstração funcional da interface e aplicação de herança, polimorfismo e composição no código |
 
 ---
 
