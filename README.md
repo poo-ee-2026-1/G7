@@ -54,7 +54,7 @@ Criar um aplicativo de finanças de fácil uso para melhorar o planejamento fina
 
 | Tarefa | Responsável | Prazo estimado |
 |--------|-------------|----------------|
-| Criação do código | Guilherme | 3 meses |
+| Criação da interface | Guilherme | 3 meses |
 | Criação do código | Thiago | 3 meses |
 | Criação do código | Arthur | 3 meses |
 
