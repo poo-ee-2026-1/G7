@@ -44,7 +44,7 @@ Criar um aplicativo de finanças de fácil uso para melhorar o planejamento fina
 
 | Membro | Função | Responsabilidade |
 |--------|--------|-----------------|
-| **Guilherme** | Backend | criação do código |
+| **Guilherme** | Frontend | criação da interface |
 | **Thiago** | Backend | criação do código |
 | **Arthur** | Backend | criação do código |
 
