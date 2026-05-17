@@ -1,27 +1,62 @@
-<img width="1005" height="1560" alt="diagrama_classes" src="https://github.com/user-attachments/assets/668da33f-2bd1-4535-a984-d5fed693d1ce" />
+<img width="3120" height="6468" alt="image" src="https://github.com/user-attachments/assets/b100476f-4379-409c-8128-6997f888ac2f" />
 
-Classes: Main, Usuario, Transacao, TransacaoFixa, TransacaoVariavel, GerenciadorFinanceiro, RelatorioTexto, RelatorioCsv, Categoria, NaturezaFixa
+Classes: Main, Usuario, Transacao, TransacaoFixa, TransacaoVariavel, GerenciadorFinanceiro, RelatorioTexto, Categoria, NaturezaFixa, InterfaceGrafica.
 
-Encapsulamento: Usuario (nome, email), Transacao (id, descricao, valor, categoria, data), GerenciadorFinanceiro (usuario, transacoes), TransacaoFixa (natureza), TransacaoVariavel (parcelado, numeroParcelas)
+Encapsulamento:
 
-Abstração: Transacao (métodos abstratos getValorLiquido() e getTipo())
+•Usuario: atributos nome, email são private.
+•Transacao: atributos id, descricao, valor, categoria, data, metodoPagamento são private.
+•GerenciadorFinanceiro: atributos usuario, transacoes são private.
+•TransacaoFixa: atributo natureza é private.
+•TransacaoVariavel: atributos parcelado, numeroParcelas são private.
 
-Herança: TransacaoFixa herda de Transacao, TransacaoVariavel herda de Transacao
+Abstração:
 
-Polimorfismo (sobrescrita): getValorLiquido() em TransacaoFixa e TransacaoVariavel, getTipo() em TransacaoFixa e TransacaoVariavel
+•Transacao: Classe abstrata com métodos abstratos getValorLiquido() e getTipo().
 
-Polimorfismo (sobrecarga): Construtores de TransacaoVariavel (construtor completo com parcelamento e construtor simplificado à vista)
+Herança:
 
-Associação: RelatorioTexto → GerenciadorFinanceiro, RelatorioCsv → GerenciadorFinanceiro, Transacao → Categoria, Main → GerenciadorFinanceiro, Main → RelatorioTexto, Main → RelatorioCsv
+•TransacaoFixa herda de Transacao.
+•TransacaoVariavel herda de Transacao.
+Polimorfismo (Sobrescrita):
+•getValorLiquido() e getTipo() sobrescritos em TransacaoFixa e TransacaoVariavel.
 
-Agregação: GerenciadorFinanceiro agrega Transacao (lista de transações)
+Polimorfismo (Sobrecarga):
 
-Composição: GerenciadorFinanceiro compõe Usuario, TransacaoFixa compõe NaturezaFixa
+•Construtores de TransacaoVariavel (um completo com parcelamento e um simplificado).
 
-Modificadores de acesso: private (todos os atributos), public (todos os métodos), static (contadorId em Transacao, sc em Main)
+Associação:
 
-Construtores: Transacao (valida valor), TransacaoVariavel (dois construtores), GerenciadorFinanceiro (recebe Usuario), RelatorioTexto (recebe GerenciadorFinanceiro), RelatorioCsv (recebe GerenciadorFinanceiro)
+•RelatorioTexto → GerenciadorFinanceiro
+•InterfaceGrafica → GerenciadorFinanceiro
+•Transacao → Categoria
+•Main → Usuario, GerenciadorFinanceiro, InterfaceGrafica
 
-Destrutores: Não se aplicam em Java — memória gerenciada pelo Garbage Collector. Recursos externos liberados via try-with-resources em RelatorioCsv
+Agregação:
 
-Classes abstratas: Transacao
+•GerenciadorFinanceiro agrega Transacao (lista de transações).
+
+Composição:
+
+•GerenciadorFinanceiro contém Usuario.
+•TransacaoFixa contém NaturezaFixa.
+
+Modificadores de Acesso:
+
+•private para atributos, public para métodos, static para contadorId em Transacao e main em Main.
+
+Construtores:
+
+•Transacao (inicializa atributos base).
+•TransacaoVariavel (dois construtores).
+•GerenciadorFinanceiro (recebe Usuario).
+•RelatorioTexto (recebe GerenciadorFinanceiro).
+•InterfaceGrafica (recebe GerenciadorFinanceiro).
+
+Destrutores:
+
+•Não se aplicam diretamente em Java (gerenciado pelo Garbage Collector).
+
+Classes Abstratas:
+
+•Transacao.
