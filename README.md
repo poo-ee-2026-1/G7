@@ -1,6 +1,6 @@
 # G7
 
-# FinanceApp — Controle de Gastos Pessoal
+# JFinance — Controle de Gastos Pessoal
 
 > Aplicativo de finanças pessoal focado em simplicidade, usabilidade e visualização inteligente dos seus gastos.
 
@@ -8,7 +8,7 @@
 
 ## Introdução
 
-O **FinanceApp** nasceu da necessidade real de um controle financeiro pessoal eficiente. Diante da ausência de aplicativos no mercado que atendessem às nossas necessidades — especialmente no quesito de interface intuitiva e experiência de uso —, decidimos criar nossa própria solução.
+O **JFinance** nasceu da necessidade real de um controle financeiro pessoal eficiente. Diante da ausência de aplicativos no mercado que atendessem às nossas necessidades — especialmente no quesito de interface intuitiva e experiência de uso —, decidimos criar nossa própria solução.
 
 ### Problema
 
@@ -74,6 +74,7 @@ Criar um aplicativo de finanças de fácil uso para melhorar o planejamento fina
 | 11/05 | Demonstração funcional da interface e aplicação de herança, polimorfismo e composição no código |
 | 18/05 | Upload do código no repositório do Github |
 | 28/05 | Modificações finais do código e do Diagrama de Classes |
+| 01/06 | Apresentação do Projeto |
 
 ---
 
