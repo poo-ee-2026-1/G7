@@ -73,6 +73,7 @@ Criar um aplicativo de finanças de fácil uso para melhorar o planejamento fina
 | 27/04 | Apresentação dos códigos das classes Usuario e Categoria |
 | 11/05 | Demonstração funcional da interface e aplicação de herança, polimorfismo e composição no código |
 | 18/05 | Upload do código no repositório do Github |
+| 28/05 | Modificações finais do código e do Diagrama de Classes |
 
 ---
 
