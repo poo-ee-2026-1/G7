@@ -1,4 +1,5 @@
-<img width="3120" height="6468" alt="image" src="https://github.com/user-attachments/assets/b100476f-4379-409c-8128-6997f888ac2f" />
+<img width="3120" height="1356" alt="diagrama_classes_jfinance" src="https://github.com/user-attachments/assets/23f1d7ad-743a-463b-bb84-8bb97e1053ab" />
+
 
 Classes: Main, Usuario, Transacao, TransacaoFixa, TransacaoVariavel, GerenciadorFinanceiro, RelatorioTexto, Categoria, NaturezaFixa, InterfaceGrafica.
 
